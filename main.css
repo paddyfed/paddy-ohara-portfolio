@@ -1,79 +1,85 @@
-/* CSS Document */ :root {
-    @media (prefers-color-scheme: light) {
-        --main-color: #073b3a;
-        --main-bg-color: #eae0cc;
-        --main-text-color: #34252f;
-        --alt-bg-color: #34252f;
-        --alt-text-color: #eae0cc;
-    }
-    @media (prefers-color-scheme: dark) {
-        --main-color: #fe5d26;
-        --main-bg-color: #34252f;
-        --main-text-color: #eae0cc;
-        --alt-bg-color: #eae0cc;
-        --alt-text-color: #34252f;
-    }
+/* CSS Document */
+:root {
+  --main-color: #073b3a;
+  --main-bg-color: #eae0cc;
+  --main-text-color: #34252f;
+  --alt-bg-color: #34252f;
+  --alt-text-color: #eae0cc;
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-color: #fe5d26;
+    --main-bg-color: #34252f;
+    --main-text-color: #eae0cc;
+    --alt-bg-color: #eae0cc;
+    --alt-text-color: #34252f;
+  }
+}
+
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
-    font-family: "Hind Guntur", sans-serif;
-    font-size: 24px;
-    padding: 0;
-    margin: 0;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: "Hind Guntur", sans-serif;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
 }
 main {
-    padding: 1em;
+  padding: 1em;
 }
 h1 {
-    font-family: "Prompt", sans-serif;
-    font-weight: 800;
-    font-size: 80px;
-    color: var(--main-color);
+  font-family: "Prompt", sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  color: var(--main-color);
 }
 h1.hero {
-    font-size: 200px;
+  font-size: 200px;
 }
-h2, h3, h4, h5, h6 {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 800;
-    color: var(--main-color);
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  color: var(--main-color);
 }
 h2 {
-    font-size: 42px;
+  font-size: 42px;
 }
 header {
-    display: flex;
-    padding: 1em;
+  display: flex;
+  padding: 1em;
 }
 footer {
-    padding: 1em;
-    margin: 0;
-    background-color: var(--alt-bg-color);
-    color: var(--alt-text-color);
-    display: flex;
-    align-items: flex-start;
-    gap: 2em;
-    position: relative;
-    bottom: 0;
+  padding: 1em;
+  margin: 0;
+  background-color: var(--alt-bg-color);
+  color: var(--alt-text-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+  position: relative;
+  bottom: 0;
 }
 footer h3 {
-    color: inherit;
-    padding: 0;
-    margin: 0;
+  color: inherit;
+  padding: 0;
+  margin: 0;
 }
 footer nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 #main-menu-icon {
-    position: fixed;
-    top: 1em;
-    right: 1em;
+  position: fixed;
+  top: 1em;
+  right: 1em;
 }
