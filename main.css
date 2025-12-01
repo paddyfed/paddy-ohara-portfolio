@@ -1,121 +1,143 @@
-/* CSS Document */ :root {
-    --main-color: #073b3a;
-    --main-bg-color: #eae0cc;
-    --main-text-color: #34252f;
-    --alt-bg-color: #34252f;
-    --alt-text-color: #eae0cc;
-    --light-text-color: #eae0cc;
-    --dark-text-color: #34252f;
+/* CSS Document */
+:root {
+  --main-color: #073b3a;
+  --main-bg-color: #eae0cc;
+  --main-text-color: #34252f;
+  --alt-bg-color: #34252f;
+  --alt-text-color: #eae0cc;
+  --light-text-color: #eae0cc;
+  --dark-text-color: #34252f;
 }
 @media (prefers-color-scheme: dark) {
-    :root {
-        --main-color: #fe5d26;
-        --main-bg-color: #34252f;
-        --main-text-color: #eae0cc;
-        --alt-bg-color: #eae0cc;
-        --alt-text-color: #34252f;
-    }
+  :root {
+    --main-color: #fe5d26;
+    --main-bg-color: #34252f;
+    --main-text-color: #eae0cc;
+    --alt-bg-color: #eae0cc;
+    --alt-text-color: #34252f;
+  }
 }
 /* Default options */
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+  font-size: 24px;
 }
 body {
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
-    font-family: "Hind Guntur", sans-serif;
-    font-size: 24px;
-    padding: 0;
-    margin: 0;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: "Hind Guntur", sans-serif;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 /*main {
   padding: 1em;
 }*/
 h1 {
-    font-family: "Prompt", sans-serif;
-    font-weight: 800;
-    font-size: 80px;
-    color: var(--main-color);
+  font-family: "Prompt", sans-serif;
+  font-weight: 800;
+  font-size: clamp(2rem, calc(5vw + 1rem), 80px);
+  color: var(--main-color);
 }
 h1.hero {
-    font-size: 200px;
+  font-size: clamp(2rem, calc(10vw + 1rem), 200px);
 }
-h2, h3, h4, h5, h6 {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 800;
-    color: var(--main-color);
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  color: var(--main-color);
 }
 h2 {
-    font-size: 42px;
+  font-size: clamp(2rem, calc(5vw + 1rem), 42px);
 }
 header {
-    display: flex;
-    padding: 1em;
-    min-height: 100vh;
+  display: flex;
+  padding: 1em;
+  min-height: 100vh;
 }
 footer {
-    padding: 1em;
-    margin: 0;
-    background-color: var(--alt-bg-color);
-    color: var(--alt-text-color);
-    display: flex;
-    align-items: flex-start;
-    gap: 2em;
-    position: relative;
-    bottom: 0;
+  padding: 1em;
+  margin: 0;
+  background-color: var(--alt-bg-color);
+  color: var(--alt-text-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+  position: relative;
+  bottom: 0;
 }
 footer h3 {
-    color: inherit;
-    padding: 0;
-    margin: 0;
+  color: inherit;
+  padding: 0;
+  margin: 0;
 }
 footer nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 #main-menu-icon {
-    position: fixed;
-    top: 1em;
-    right: 1em;
+  position: fixed;
+  top: 1em;
+  right: 1em;
 }
 /* specific options */
 section.image-section {
-    min-height: 100vh;
-    padding: 1em;
-    background-size: cover;
+  min-height: 100vh;
+  padding: 1em;
+  background-size: cover;
+  background-position: center;
 }
 section.image-section h1 {
-    color: var(--light-text-color);
-    /*    mix-blend-mode: exclusion;*/
-    
+  color: var(--light-text-color);
+
+  /*    mix-blend-mode: exclusion;*/
 }
 .scroll-in-right {
-	animation: scroll-in-right 5s ease;
-    animation-play-state: paused;
-}.animated {
-    animation-play-state: running;
+  animation: scroll-in-right 5s ease;
+  animation-play-state: paused;
+}
+.animated {
+  animation-play-state: running;
 }
 section#photography {
-    background-image: url("assets/images/camera-on-desk-large.jpg");
+  background-image: url("assets/images/camera-on-desk-large.jpg");
+  position: relative;
+}
+section#photography::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 section#videography {
-    background-image: url("assets/images/videographer-cmaera-large.jpg");
+  background-image: url("assets/images/videographer-cmaera-large.jpg");
 }
 section#webdesign {
-    background-image: url("assets/images/developer-desktop-large.jpg");
+  background-image: url("assets/images/developer-desktop-large.jpg");
 }
 section#printdesign {
-    background-image: url("assets/images/photographer-desktop-large.jpg");
+  background-image: url("assets/images/photographer-desktop-large.jpg");
 }
 /* animation keyframes */
 @keyframes scroll-in-right {
-    from {
-        transform: translateX(100%)
-    }
-    to {
-        transform: translateX(0)
-    }
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
