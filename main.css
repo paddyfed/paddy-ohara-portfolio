@@ -5,6 +5,8 @@
   --main-text-color: #34252f;
   --alt-bg-color: #34252f;
   --alt-text-color: #eae0cc;
+	--light-text-color: #eae0cc;
+	--dark-text-color: #34252f;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -16,6 +18,7 @@
   }
 }
 
+/* Default options */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -29,9 +32,9 @@ body {
   padding: 0;
   margin: 0;
 }
-main {
+/*main {
   padding: 1em;
-}
+}*/
 h1 {
   font-family: "Prompt", sans-serif;
   font-weight: 800;
@@ -56,6 +59,7 @@ h2 {
 header {
   display: flex;
   padding: 1em;
+	min-height: 100vh;
 }
 footer {
   padding: 1em;
@@ -82,4 +86,25 @@ footer nav ul {
   position: fixed;
   top: 1em;
   right: 1em;
+}
+
+/* specific options */
+section.image-section {
+	min-height: 100vh;
+	padding: 1em;
+	background-size: cover;
+}
+section.image-section h1 {
+	color: var(--light-text-color);
+	mix-blend-mode: exclusion;
+}
+
+section#photography {
+	background-image: url("assets/images/camera-on-desk-large.jpg");
+}section#videography {
+	background-image: url("assets/images/videographer-cmaera-large.jpg");
+}section#webdesign {
+	background-image: url("assets/images/developer-desktop-large.jpg");
+}section#printdesign {
+	background-image: url("assets/images/photographer-desktop-large.jpg");
 }
