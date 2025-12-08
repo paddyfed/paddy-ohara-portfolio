@@ -114,6 +114,7 @@ section#photography {
   background-image: url("assets/images/camera-on-desk-large.jpg");
   position: relative;
 }
+/*
 section#photography::before {
   content: "";
   position: absolute;
@@ -123,6 +124,7 @@ section#photography::before {
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
+*/
 section#videography {
   background-image: url("assets/images/videographer-cmaera-large.jpg");
 }
@@ -140,4 +142,36 @@ section#printdesign {
   to {
     transform: translateX(0);
   }
+}
+
+/* main nav menu styles */
+#mainNavMenu {
+	width: 0;
+	height: 100vh;
+	position: fixed;
+	z-index: 1;
+	top:0;
+	right: 0;
+	background-color: var(--main-bg-color);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	border: 1px solid var(--alt-bg-color);
+}
+
+/*
+@media screen and (min-width: 992px) {
+	#mainNavMenu {
+		width: 25%;
+	}
+} 
+*/
+
+#mainNavMenu ul {
+	list-style: none;
+}
+
+#menu-close-icon {
+	margin: 1em;
+	
 }
