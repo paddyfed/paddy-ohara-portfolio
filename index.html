@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<nav id="mainNavMenu"> <a href="#" onClick="closeNav()"><i class="fa-solid fa-times fa-2x" id="menu-close-icon" ></i></a>
+<nav id="mainNavMenu"> <button type="button" onClick="closeNav()" id="menu-close-icon"><i class="fa-solid fa-times fa-3x" ></i></button>
   <ul>
     <li>Home</li>
     <li>About Me</li>
@@ -24,9 +24,10 @@
     <li>Contact</li>
   </ul>
 </nav>
-<header>
+<header><button type="button" onclick="openNav()" id="main-menu-icon"><i class="fa-solid fa-bars fa-3x" ></i></button>
   <h1 class="hero scroll-in-right animated">Paddy O'Hara</h1>
-  <a href="#" onclick="openNav()"><i class="fa-solid fa-bars fa-2x" id="main-menu-icon" ></i></a></header>
+	<i class="fa-solid fa-arrow-down fa-3x"></i>
+  </header>
 <main>
   <section class="image-section" id="videography">
     <h1 class="scroll-in-right">Videography</h1>
