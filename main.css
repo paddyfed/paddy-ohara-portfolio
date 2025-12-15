@@ -188,4 +188,8 @@ section#printdesign {
         width: 25%;
     }
 }
-
+/* background icons for site */
+.background-icons {
+	position: absolute;
+	z-index: -1;
+}
