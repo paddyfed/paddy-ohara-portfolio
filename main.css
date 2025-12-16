@@ -2,8 +2,10 @@
     --main-color: #073b3a;
     --main-bg-color: #eae0cc;
     --main-text-color: #34252f;
+	--main-accent-color: #519872;
     --alt-bg-color: #34252f;
     --alt-text-color: #eae0cc;
+	--alt-accent-color: #fe5d26;
     --light-text-color: #eae0cc;
     --dark-text-color: #34252f;
 }
@@ -14,6 +16,7 @@
         --main-text-color: #eae0cc;
         --alt-bg-color: #eae0cc;
         --alt-text-color: #34252f;
+		--alt-accent-color: #eae0cc;
     }
 }
 /* Default options */
@@ -112,7 +115,7 @@ section.image-section {
     background-position: center;
 }
 section.image-section h1 {
-    color: var(--main-text-color);
+    color: var(--main-color);
 	background-color: var(--main-bg-color);
 	padding: .2em;
     /*    mix-blend-mode: exclusion;*/
