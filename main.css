@@ -192,6 +192,12 @@ width: stretch;
     #mainNavMenu.menu-open {
         width: 25%;
     }
+	
+	.project-showcase-project {
+		display: grid;
+	grid: auto / 1fr 1fr;
+		gap: 1em;
+	}
 }
 /* background icons for site */
 .background-icons {
