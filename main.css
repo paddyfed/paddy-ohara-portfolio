@@ -78,6 +78,9 @@ header {
     padding: 1em;
     min-height: 100vh;
 }
+section {
+	padding: 1em;
+}
 footer {
     padding: 1em;
     margin: 0;
@@ -135,6 +138,21 @@ section#webdesign {
 }
 section#printdesign {
     background-image: url("assets/images/photographer-desktop-large.jpg");
+}
+.call-to-action {width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1rem;
+}
+.call-to-action-button {	
+	display: block;
+width: stretch;
+	background-color: var(--alt-accent-color);
+	text-align: center;
+	border-radius: .5em;
+	padding: 1em;	
+	color: var(--alt-text-color);
+
 }
 /* animation keyframes */
 @keyframes scroll-in-right {
