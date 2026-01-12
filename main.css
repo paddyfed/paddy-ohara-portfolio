@@ -198,6 +198,40 @@ section#printdesign {
     transform: translateX(0);
   }
 }
+/* forms */
+
+form {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.form-control {
+	display: grid;
+	gap: 1em;
+	padding: .5em;
+	grid: auto / auto;
+}
+textarea {
+	resize: none;
+}
+.form-control label {
+	width: 30%;
+	align-content: center;
+}
+.form-control input {
+	width: 100%;
+	height: 1.5rem;
+}
+
+.form-control.full-width {
+	grid: auto / auto;
+}
+
+.form-control button {
+	font-size: inherit;
+	border: none;
+	text-decoration: underline;
+}
 /* main nav menu styles */
 #mainNavMenu {
   width: 0;
@@ -233,6 +267,14 @@ section#printdesign {
     grid: auto / 1fr 1fr;
     gap: 1em;
   }
+	
+	.form-control {
+		grid: auto / 1fr 2fr;
+	}
+	
+	form {
+		width: 50%;
+	}
 }
 /* background icons for site */
 .background-icons {
@@ -240,38 +282,4 @@ section#printdesign {
 /*  z-index: -1;*/
   width: 100%;
 /*  height: 100vh;*/
-}
-/* forms */
-
-form {
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-}
-.form-control {
-	display: grid;
-	gap: 1em;
-	padding: .5em;
-	grid: auto / 1fr 2fr;
-}
-textarea {
-	resize: none;
-}
-.form-control label {
-	width: 30%;
-	align-content: center;
-}
-.form-control input {
-	width: 100%;
-	height: 1.5rem;
-}
-
-.form-control.full-width {
-	grid: auto / auto;
-}
-
-.form-control button {
-	font-size: inherit;
-	border: none;
-	text-decoration: underline;
 }
