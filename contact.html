@@ -43,7 +43,21 @@ we’ll figure out the next steps together.</p>
 
   </section>
   <section>
-    
+    <form method="post" name="ContactForm">
+	  <div class="form-control">
+		<label for="contactName">Name</label>
+		<input type="text" name="contactName" id="contactName" required />
+		</div>
+		<div class="form-control">
+		<label for="contactEmail">Email</label>
+		<input type="email" name="contactEmail" id="contactEmail" required />
+		</div>
+		<div class="form-control">
+		<label for="contactMessage">Message</label>
+		<textarea name="message" id="contactMessage" rows="20" required></textarea>
+		</div>
+		<div class="form-control full-width"><button type="submit" class="call-to-action-button">Submit</button></div>
+	  </form>
   </section>
   
 </main>
