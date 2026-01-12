@@ -7,7 +7,6 @@ const callback = (entries, options) => {
         console.log(entry.isIntersecting);
         if (entry.isIntersecting && !entry.target.classList.contains("animated")) {
             entry.target.classList.add("animated");
-			entry.target.classList.remove("hide")
         }
     })
 }
