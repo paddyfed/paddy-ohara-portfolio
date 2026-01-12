@@ -59,6 +59,7 @@ body {
   font-size: 1rem;
   padding: 0;
   margin: 0;
+	max-width: 100vw;
 /*  overflow-x: hidden;*/
 }
 h1 {
@@ -89,7 +90,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   padding: 1em;
-  min-height: 100vh;
+/*  min-height: 50vh;*/
 }
 section {
   padding: 1em;
@@ -182,6 +183,12 @@ section#printdesign {
   width: 95%;
   margin-inline: auto;
 }
+.full-height {
+	min-height: 100vh;
+}
+.hide {
+	content-visibility: hidden;
+}
 /* animation keyframes */
 @keyframes scroll-in-right {
   from {
@@ -229,10 +236,10 @@ section#printdesign {
 }
 /* background icons for site */
 .background-icons {
-  position: absolute;
-  z-index: -1;
+  position: relative;
+/*  z-index: -1;*/
   width: 100%;
-  height: 100vh;
+/*  height: 100vh;*/
 }
 /* forms */
 

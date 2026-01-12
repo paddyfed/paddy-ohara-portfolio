@@ -21,6 +21,7 @@ function createElement(iconClass, iconColor, iconRotate = null) {
 	el.style.top = getRandomPercentage();
 	el.style.left = getRandomPercentage();
 	el.style.color = `var(${iconColor})`;
+	el.style.zIndex = -1;
 	iconStage.appendChild(el);
 }
 
