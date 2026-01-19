@@ -95,13 +95,16 @@ header {
 section {
   padding: 1em;
 }
-figure {
-  margin: 0;
-}
+
 img {
   max-width: 100%;
   height: auto;
 }
+figure {
+  margin: 0;
+	width: min-content;
+}
+figure img { max-width: none}
 footer {
   padding: 1em;
   margin: 0;
