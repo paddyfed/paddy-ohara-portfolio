@@ -150,16 +150,16 @@ section.image-section h1 {
   animation-play-state: running;
 }
 section#photography {
-  background-image: url("assets/images/camera-on-desk-large.jpg");
+  background-image: url("assets/images/main/camera-on-desk-large.jpg");
 }
 section#videography {
-  background-image: url("assets/images/videographer-camera-large.jpg");
+  background-image: url("assets/images/main/videographer-camera-large.jpg");
 }
 section#webdesign {
-  background-image: url("assets/images/developer-desktop-large.jpg");
+  background-image: url("assets/images/main/developer-desktop-large.jpg");
 }
 section#printdesign {
-  background-image: url("assets/images/photographer-desktop-large.jpg");
+  background-image: url("assets/images/main/photographer-desktop-large.jpg");
 }
 .call-to-action {
   width: 50%;
