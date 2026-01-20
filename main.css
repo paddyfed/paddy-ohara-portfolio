@@ -96,7 +96,7 @@ section {
   padding: 1em;
 }
 
-img {
+img, video {
   max-width: 100%;
   height: auto;
 }
