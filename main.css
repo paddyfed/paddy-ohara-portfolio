@@ -185,6 +185,7 @@ section#printdesign {
   gap: 1em;
   width: 95%;
   margin-inline: auto;
+	justify-content: center;
 }
 .full-height {
 	min-height: 100vh;
