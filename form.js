@@ -29,7 +29,7 @@ function validateField(field) {
 }
 
 // add an event listener to all fields to validate when the field is no longer in focus
-form.querySelectorAll("input, textarea").forEach((input) => {
+form.querySelectorAll("input:not([type=hidden]), textarea:not([id=g-recaptcha-response]").forEach((input) => {
   input.addEventListener("blur", () => {
     validateField(input);
   });
@@ -43,7 +43,7 @@ form.addEventListener("submit", function (e) {
   let isValid = true;
 
   // get a list of all form fields
-  const fields = form.querySelectorAll("input, textarea");
+  const fields = form.querySelectorAll("input:not([type=hidden]), textarea:not([id=g-recaptcha-response]");
 
   // for each form field...
   fields.forEach((field) => {

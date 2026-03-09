@@ -273,6 +273,9 @@ input:user-invalid,textarea:user-invalid {
 .form-error-message:empty {
     display: none;
 }
+.recaptcha {
+    grid-column: 2 / 2;
+}
 /* main nav menu styles */
 #mainNavMenu {
     width: 0;
