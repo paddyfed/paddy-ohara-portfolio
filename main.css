@@ -297,6 +297,9 @@ textarea {
     .form-control {
         grid: auto / 1fr 2fr;
     }
+    .form-error-message {
+        grid-column: 1 / span 2;
+    }
     form {
         width: 50%;
     }
