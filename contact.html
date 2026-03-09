@@ -11,14 +11,15 @@
 <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet" type="text/css">
 <link href="assets/fontawesome/css/solid.css" rel="stylesheet" type="text/css">
 <script src="animating-headers.js" defer></script> 
-<script src="show-and-hide-menu.js" defer></script>
-	<script src="random-background-icons.js" defer></script>
+<script src="show-and-hide-menu.js" defer></script> 
+<script src="random-background-icons.js" defer></script>
 </head>
 
 <body>
-<nav id="mainNavMenu"> <button type="button" onClick="closeNav()" id="menu-close-icon" aria-label="Close menu"><i class="fa-solid fa-times fa-3x" ></i></button>
+<nav id="mainNavMenu">
+  <button type="button" onClick="closeNav()" id="menu-close-icon" aria-label="Close menu"><i class="fa-solid fa-times fa-3x" ></i></button>
   <h2>Menu</h2>
-	<ul>
+  <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About Me</a></li>
     <li><a href="showcase.html">Project Showcase</a></li>
@@ -26,52 +27,49 @@
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
-<header class="background-icons"><button type="button" onclick="openNav()" id="main-menu-icon" aria-label="Open menu"><i class="fa-solid fa-bars fa-3x" ></i></button>
+<header class="background-icons">
+  <button type="button" onclick="openNav()" id="main-menu-icon" aria-label="Open menu"><i class="fa-solid fa-bars fa-3x" ></i></button>
   <h1 class="hero scroll-in-right animated">Paddy O'Hara</h1>
-<!--	<i class="fa-solid fa-arrow-down fa-3x"></i>-->
-<!--	<div class="background-icons"></div>-->
-  </header>
+  <!--	<i class="fa-solid fa-arrow-down fa-3x"></i>--> 
+  <!--	<div class="background-icons"></div>--> 
+</header>
 <main>
   <section>
     <h2 class="scroll-in-right">Contact</h2>
-	  <p>If you’d like to work together or just have a
-question, I’m always happy to chat. Whether you’re
-starting a new project or exploring an idea, feel
-free to reach out and I’ll get back to you as soon as
-I can. Use the form below to send a message, and
-we’ll figure out the next steps together.</p>
-
-
+    <p>If you’d like to work together or just have a
+      question, I’m always happy to chat. Whether you’re
+      starting a new project or exploring an idea, feel
+      free to reach out and I’ll get back to you as soon as
+      I can. Use the form below to send a message, and
+      we’ll figure out the next steps together.</p>
     <form method="post" name="ContactForm">
-	  <div class="form-control">
-		<label for="contactName">Name</label>
-		<input type="text" name="contactName" id="contactName" required>
-          <span class="form-error-message" aria-live="polite"></span>
-		</div>
-		<div class="form-control">
-		<label for="contactEmail">Email</label>
-		<input type="email" name="contactEmail" id="contactEmail" required>
-            <span class="form-error-message" aria-live="polite"></span>
-		</div>
-		<div class="form-control">
-		<label for="contactMessage">Message</label>
-		<textarea name="message" id="contactMessage" rows="20" required></textarea>
-            <span class="form-error-message" aria-live="polite"></span>
-		</div>
-		<div class="form-control full-width"><button type="submit" class="call-to-action-button">Submit</button></div>
-	  </form>
+      <div class="form-control">
+        <label for="contactName">Name</label>
+        <input type="text" name="contactName" id="contactName" required>
+        <span class="form-error-message" aria-live="polite"></span> </div>
+      <div class="form-control">
+        <label for="contactEmail">Email</label>
+        <input type="email" name="contactEmail" id="contactEmail" required>
+        <span class="form-error-message" aria-live="polite"></span> </div>
+      <div class="form-control">
+        <label for="contactMessage">Message</label>
+        <textarea name="message" id="contactMessage" rows="20" required></textarea>
+        <span class="form-error-message" aria-live="polite"></span> </div>
+      <div class="form-control full-width">
+        <button type="submit" class="call-to-action-button">Submit</button>
+      </div>
+    </form>
   </section>
-  
 </main>
 <footer>
   <h2>Paddy O'Hara</h2>
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Me</a></li>
-    <li><a href="showcase.html">Project Showcase</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="showcase.html">Project Showcase</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </footer>
