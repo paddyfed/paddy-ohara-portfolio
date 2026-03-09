@@ -230,14 +230,18 @@ form {
 }
 textarea {
     resize: none;
+    border: 1px solid var(--main-accent-color);
+    border-radius: 6px;
 }
 .form-control label {
     width: 30%;
     align-content: center;
 }
-.form-control input {
+.form-control input,textarea {
+    border: 1px solid var(--main-accent-color);
+    border-radius: 6px;
     width: 100%;
-    height: 1.5rem;
+    padding:  1em;
 }
 .form-control.full-width {
     grid: auto / auto;
@@ -246,6 +250,15 @@ textarea {
     font-size: inherit;
     border: none;
     text-decoration: underline;
+}
+.form-control:has([required]) label {
+    display: flex;
+    gap: 1ch;
+    
+    &::after {
+        content: '*';
+        color: var(--alt-accent-color);
+    }
 }
 /* main nav menu styles */
 #mainNavMenu {
