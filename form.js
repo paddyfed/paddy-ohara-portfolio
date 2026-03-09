@@ -12,7 +12,7 @@ function validateField(field) {
     // change the error message
     // If the field is required
     if (field.validity.valueMissing) {
-      errorElement.textContent = "This field is required";
+      errorElement.textContent = `${field.parentElement.querySelector("label").textContent} is required`;
 
     }
     // if the field has the wrong format

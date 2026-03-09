@@ -242,6 +242,13 @@ textarea {
     border-radius: 6px;
     width: 100%;
     padding:  1em;
+    
+    &:focus-visible {
+        outline-color: var(--main-accent-color);
+    }
+}
+input:user-invalid,textarea:user-invalid {
+    border-color: var(--alt-accent-color);
 }
 .form-control.full-width {
     grid: auto / auto;
@@ -259,6 +266,12 @@ textarea {
         content: '*';
         color: var(--alt-accent-color);
     }
+}
+.form-error-message {
+    color: var(--alt-accent-color);
+}
+.form-error-message:empty {
+    display: none;
 }
 /* main nav menu styles */
 #mainNavMenu {
